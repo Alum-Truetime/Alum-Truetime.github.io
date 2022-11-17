@@ -204,16 +204,14 @@
                                     for the cleaning process was MS Excel.
                                 </p>
                                 <p>Admittedly, the documentation of the step-by-step cleaning process is going to need
-                                    to be recreated at a later time. The process was kept to removing records that were
-                                    incomplete, due to missing data that was caused by the programming. the error
-                                    was caught during the beginning of the beta phase testing and has held up for the 5
-                                    years that we had been using the calculator. Continuing with the cleaning,
-                                    I descovered filling in the needed Manufacturer information that was supposed to
-                                    be part of the quote process, had been skipped to save time. The next version of the
-                                    tool will need to have this process automated. I made the decision to complete the
-                                    transformation and analysis of the data in Jupyter Notebooks for project
-                                    documentation and my own education of Python for Data Analysis.
+                                    to be recreated at a later time. The process was began with deleting the the lines
+                                    that were incomplete. I then reformated the date column to be more consistant with
+                                    data practices changing it to [Year, Month, Day] format. This was all that was
+                                    needed
+                                    for this data set. I then turned the data into a table and moved to the next phase
+                                    of the process.
                                 </p>
+
 
                             </div>
                         </div>
@@ -228,17 +226,84 @@
                                 <p class="fh5co-lead">Here is where the interesting work begins...
                                 </p>
                                 <p>
-                                    The environment needed to be setup and documented. I am using Anaconda for my
-                                    version of Python and I created a Virtual Environment in order to maintain the
-                                    integrety of the project. I documented the versions of the software in the
-                                    project ReadMe.txt file.
+                                    As I am using Excel to complete this portion of the analysis, I created a copy of
+                                    the excel file and checked it into github in order to keep track of any changes that
+                                    would result from the analysis process. After reviewing the data in order to
+                                    determine what portion of the story it would lend itself. I had determined that the
+                                    most relevant information that was captured by the tool and was presenting itself,
+                                    was the year to year data that was largly influenced by the economic ebbs and flows
+                                    of the contract furniture industry. I needed to exclude the information from 2020
+                                    and 2021 as the inconsistancies skewed the more relevant information captured during
+                                    the previous 4 years.
                                 </p>
+                                <p class="fh5co-lead">2016 Operations Calculations Data:
+                                </p>
+                                <div class="col-md-5">
+                                    <figure><img src="Images/OHMS_Excel_Images/OHMS_Excel_2016_Table.png"
+                                            class="img-responsive" alt="No Image Found"></figure>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure><img src="Images/OHMS_Excel_Images/OHMS_Excel_2016_Chart.png"
+                                            class="img-responsive" alt="No Image Found"></figure>
+                                </div>
                                 <p>
-                                    For the IDE, I am using VS Code with Jupyter Notebooks. This, being the standard for
-                                    general Data Analysis. The details of the analysis is available at my <a
+                                    Some backgroud information needs to be noted in regards to the 2016 fiscal year.
+                                    During this year, there were three sales representatives employed. They left the
+                                    company and their positions were never filled moving into the the following 3 years.
+                                    This becomes apparent when we move into 2017. This is apparent when you look at the
+                                    distribution of the quotes. each market segmant (Government, Healthcare, Education
+                                    and corporate) had there individual cycles. It needs to be noted that this was when
+                                    we had placed the installation calculator into production.
+                                </p>
+                                <p class="fh5co-lead">2017 Operations Calculations Data:
+                                </p>
+                                <div class="col-md-5">
+                                    <figure><img src="Images/OHMS_Excel_Images/OHMS_Excel_2017_Table.png"
+                                            class="img-responsive" alt="No Image Found"></figure>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure><img src="Images/OHMS_Excel_Images/OHMS_Excel_2017_Chart.png"
+                                            class="img-responsive" alt="No Image Found"></figure>
+                                </div>
+                                <p>
+                                    It would need to be noted that the Operations Manager was completing the smaller
+                                    jobs and intermarket quotes in the proof-of-concept excel calulator. The
+                                    information generated by the spreadsheeet was never transfered to the
+                                    OHMS calculator.
+                                </p>
+                                <p class="fh5co-lead">2018 Operations Calculations Data:
+                                </p>
+                                <div class="col-md-5">
+                                    <figure><img src="Images/OHMS_Excel_Images/OHMS_Excel_2018_Table.png"
+                                            class="img-responsive" alt="No Image Found"></figure>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure><img src="Images/OHMS_Excel_Images/OHMS_Excel_2018_Chart.png"
+                                            class="img-responsive" alt="No Image Found"></figure>
+                                </div>
+                                <p>
+                                    The Team is starting to build it stride. As seen in the 3rd quarter, business was
+                                    building and the Operations manager was capable of easily keeping pace with the
+                                    increased number of
+                                </p>
+                                <p class="fh5co-lead">2019 Operations Calculations Data:
+                                </p>
+                                <div class="col-md-5">
+                                    <figure><img src="Images/OHMS_Excel_Images/OHMS_Excel_2019_Table.png"
+                                            class="img-responsive" alt="No Image Found"></figure>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure><img src="Images/OHMS_Excel_Images/OHMS_Excel_2019_Chart.png"
+                                            class="img-responsive" alt="No Image Found"></figure>
+                                </div>
+                                <p>
+
+                                </p>
+
+                                <p>
+                                    The files regarding the analysis are available at my <a
                                         href="https://github.com/Alum-Truetime/OHMS_Data_Analysis"
-                                        target="_blank">repository</a> so, I will keep to a broader narative in regards
-                                    to my findings.
+                                        target="_blank">repository</a>.
                                 </p>
                                 <div class="col-md-12">
                                     <ul class="fh5co-list-style-1 fh5co-inline">
@@ -285,23 +350,22 @@
 
                         </div>
 
-                        <div class="row row-bottom-padded-sm animate-box">
+                        <!--<div class="row row-bottom-padded-sm animate-box">
                             <div class="col-md-3">
                                 <h3 class="fh5co-section-heading"><span class="fh5co-number">N<sup>o</sup> 4</span>
-                                    Testimony</h3>
+                                    Summary</h3>
                             </div>
                             <div class="col-md-9">
 
                                 <blockquote class="fh5co-testimony">
-                                    <!--<p class="fh5co-quote">&ldquo;Design is the creation of a plan or convention for the
+                                    <p class="fh5co-quote">&ldquo;Design is the creation of a plan or convention for the
 										construction of an object or a system as in architectural blueprints,
 										engineering drawings, business processes, circuit diagrams and sewing
 										patterns.&rdquo;</p>
-									<p><cite>&mdash; Ben Stellar, CEO &amp; Founder</cite></p> -->
+									<p><cite>&mdash; Ben Stellar, CEO &amp; Founder</cite></p>
                                 </blockquote>
                             </div>
-
-                        </div>
+                        </div> -->
 
                         <div class="row animate-box row-bottom-padded-sm">
                             <div class="col-md-3">
