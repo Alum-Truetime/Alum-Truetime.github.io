@@ -201,19 +201,26 @@
                             </div>
                             <div class="col-md-9">
 
-                                <p class="fh5co-lead">The Data set was small and manageable. The tool that I selected
-                                    for the cleaning process was MS Excel.
+                                <p class="fh5co-lead">While I could use Excel for the analysis of this data I need to
+                                    show some level of competence in some of the other tools used for completing this
+                                    task.
                                 </p>
-                                <p>Admittedly, the documentation of the step-by-step cleaning process is going to need
-                                    to be recreated at a later time. The process was kept to removing records that were
-                                    incomplete, due to missing data that was caused by the programming. the error
-                                    was caught during the beginning of the beta phase testing and has held up for the 5
-                                    years that we had been using the calculator. Continuing with the cleaning,
-                                    I descovered filling in the needed Manufacturer information that was supposed to
-                                    be part of the quote process, had been skipped to save time. The next version of the
-                                    tool will need to have this process automated. I made the decision to complete the
-                                    transformation and analysis of the data in Jupyter Notebooks for project
-                                    documentation and my own education of Python for Data Analysis.
+                                <p>The documentation of the step-by-step cleaning process is going to need
+                                    to be recreated at a later time. The process I used started with removing records
+                                    that contained installation service lines. I descovered that I needed to fill in the
+                                    Manufacturer information. This was supposed to be part of the quote process however,
+                                    it had been skipped by the Operations Manager to save time. I therefore relied on my
+                                    industry knowledge in order to fill in this missing information. I then joined the
+                                    Date
+                                    information that was captured in the Operations worksheet table utilizing the ubique
+                                    quote numbers to assure that the dates matched the quotes. The next version of
+                                    the tool will need to have the select Manufacturer process automated. Following
+                                    these
+                                    cleaning steps, I made the decision to complete the remainder of the transformation
+                                    and
+                                    analysis of the data in Jupyter Notebooks for project documentation and my own
+                                    education
+                                    of Python for Data Analysis.
                                 </p>
 
                             </div>
@@ -226,7 +233,8 @@
                             </div>
                             <div class="col-md-9">
 
-                                <p class="fh5co-lead">Here is where the interesting work begins...
+                                <p class="fh5co-lead">Let's keep this basic as I am looking for junior/entry level work.
+                                    I will update as I continue to analize this data set.
                                 </p>
                                 <p>
                                     The environment needed to be setup and documented. I am using Anaconda for my
@@ -235,12 +243,82 @@
                                     project ReadMe.txt file.
                                 </p>
                                 <p>
-                                    For the IDE, I am using VS Code with Jupyter Notebooks. This, being the standard for
-                                    general Data Analysis. The details of the analysis is available at my <a
+                                    For the IDE, I am using VS Code with Jupyter Notebooks and then I will move the code
+                                    to
+                                    a regular python file. I am doing this to show the ability to flex between the
+                                    various ways
+                                    of completing the same task. And, this seems to be the two standards for the general
+                                    Exploration Data Analysis. The details of the analysis are available at my <a
                                         href="https://github.com/Alum-Truetime/OHMS_Data_Analysis"
                                         target="_self">repository</a> so, I will keep to a broader narative in regards
                                     to my findings.
                                 </p>
+                                <p>
+                                    Looking at the data as it is initally presented I decidied that finding the
+                                    distribution of the various Product catagories would lend some insight as to where
+                                    the majaority of the product that was quoted existed.
+                                </p>
+                                <div class="row animate-box">
+                                    <div class="col-md-12">
+                                        <figure><img src="Images/OHMS_Python_Images/OHMS_Groups.png"
+                                                class="img-responsive" alt="No Image Found"></figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    The results were about what I had expected. With systems furnitutre being the larger
+                                    portion of the product quoted. Next I wanted to look at the bearkdown of the systems
+                                    furniture and find which part catagories were the most frequently specified.
+                                </p>
+                                <div class="row animate-box">
+                                    <div class="col-md-12">
+                                        <figure><img src="Images/OHMS_Python_Images/OHMS_Parts_Catagories.png"
+                                                class="img-responsive" alt="No Image Found"></figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    The fact that Fabric Tiles were the most specified part was not suprising.
+                                    What was suprising, was the amount of support panels that had been quoted. The
+                                    quoted lines were very close to the amount of lines for panels 67" high and less. I
+                                    wouldn't have expected that result.
+                                </p>
+                                <p>
+                                    The next item I wanted to look at in this section was what manufacturers were
+                                    quoted most often.
+                                </p>
+                                <div class="row animate-box">
+                                    <div class="col-md-12">
+                                        <figure><img src="Images/OHMS_Python_Images/OHMS_Manufacturers.png"
+                                                class="img-responsive" alt="No Image Found"></figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    There is no suprise here, This is a Herman Miller Dealership and they have done well
+                                    promoting there main furniture line. Showing well in the mix is Sit-on-it and
+                                    National
+                                    seating. I was suprised to see that the National seating was quoted more often than
+                                    IDEON.
+                                    This is due to the fact that IDEON was normally specified for the larger waiting
+                                    areas.
+                                </p>
+                                <p>
+                                    The last item that I was curious about was the quantity distribution of line items.
+                                    in order to understand if the previous graphs would be skewed if I were to look at
+                                    them as the sum of there quantities instead of the number of line entries. To do
+                                    this,
+                                    I looked at the distribution quantity per entry and, here is what was returned.
+                                </p>
+                                <div class="row animate-box">
+                                    <div class="col-md-12">
+                                        <figure><img src="Images/OHMS_Python_Images/OHMS_Quantity_Distribution.png"
+                                                class="img-responsive" alt="No Image Found"></figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    I think that this needs a deeper look to determin what was being specified with a
+                                    quantity
+                                    of 196. That is a definate outlier.
+                                </p>
+
                                 <div class="col-md-12">
                                     <ul class="fh5co-list-style-1 fh5co-inline">
                                         <li><a href="OHMS_Project.html" target="_self">OHMS Project Overview</a>
@@ -254,9 +332,9 @@
                                     </ul>
                                 </div>
                                 <p>
-                                    Please Note that I am still in the process of completing this Capstone project and
-                                    will update this page with information and links as the project moves to completion.
+
                                 </p>
+
 
                             </div>
                         </div>
